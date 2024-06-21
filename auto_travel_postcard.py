@@ -14,7 +14,7 @@ def get_rgb_from_hexadecimal(color_rgb):
 from tkinter.filedialog import askopenfilename
 
 input_image_path = askopenfilename()
-print("Input image file: ", input_image_path)
+# print("Input image file: ", input_image_path)
 
 ### Sumary of input
 import google.generativeai as genai
@@ -47,13 +47,13 @@ print(f"City color is: {city_color} {city_color_rgb} ({r},{g},{b})")
 poetry_of_the_city_prompt = f"descibe city {city_name} in a short poetry"
 poetry_of_the_city_response = model.generate_content(poetry_of_the_city_prompt)
 poetry_of_the_city = poetry_of_the_city_response.text
-print(f"Poetry of the city {poetry_of_the_city}")
+print(f"Poetry of the city:\n {poetry_of_the_city}")
 
 ### Generate image
 from vertexai.preview.vision_models import ImageGenerationModel
 
 image_prompt = f"please show a watercolor image of tourist attractions in {city_name}"
-print("Image prompt: ", image_prompt)
+# print("Image prompt: ", image_prompt)
 
 model = ImageGenerationModel.from_pretrained("imagegeneration@006")
 images = model.generate_images(
