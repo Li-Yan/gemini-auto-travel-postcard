@@ -70,9 +70,9 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 image = Image.open('./gen-img.png')
-image.resize((1600, 1200))
+image = image.resize((1200, 900), Image.NEAREST)
 image_draw = ImageDraw.Draw(image)
-title_text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=230)
+title_text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=130)
 image_draw.text(
 	xy = (50, 100),
 	text = city_name,
@@ -80,13 +80,30 @@ image_draw.text(
 	font = title_text_font,
 	fill = (r, g, b)
 	)
-desciption_text_font = ImageFont.truetype(font='./Roboto-Regular.ttf', size=32)
+desciption_text_font = ImageFont.truetype(font='./Roboto-Regular.ttf', size=22)
 image_draw.text(
-	xy = (100, 300),
+	xy = (55, 220),
 	text = poetry_of_the_city,
 	align = 'left',
 	font = desciption_text_font,
 	fill = (255, 255, 255)
+	)
+
+watermark_text_font_1 = ImageFont.truetype(font='./Roboto-Regular.ttf', size=20)
+image_draw.text(
+	xy = (1000, 850),
+	text = "made by ",
+	align = 'left',
+	font = watermark_text_font_1,
+	fill = (200, 200, 200)
+	)
+watermark_text_font_2 = ImageFont.truetype(font='./Roboto-Regular.ttf', size=32)
+image_draw.text(
+	xy = (1085, 839),
+	text = "Li Yan",
+	align = 'left',
+	font = watermark_text_font_2,
+	fill = (200, 200, 200)
 	)
 image.save(input_image_path)
 image.show()
