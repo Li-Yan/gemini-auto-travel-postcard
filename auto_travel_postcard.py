@@ -26,11 +26,15 @@ print("City name is: ", city_name)
 ### Generate image
 from vertexai.preview.vision_models import ImageGenerationModel
 
-image_prompt = f"please show a oil paint image of {city_name}"
+image_prompt = f"please show a watercolor image of tourist attractions in {city_name}"
 print("Image prompt: ", image_prompt)
 
-model = ImageGenerationModel.from_pretrained("imagegeneration@005")
-images = model.generate_images(prompt=image_prompt)
+model = ImageGenerationModel.from_pretrained("imagegeneration@006")
+images = model.generate_images(
+	prompt=image_prompt,
+    number_of_images=1,
+    aspect_ratio= "4:3",
+	)
 
 images[0].save(location="./gen-img.png", include_generation_parameters=True)
 
