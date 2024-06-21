@@ -3,6 +3,10 @@ Given an image, this python tool will use Gemini to get the city of this place a
 
 Let us look at its **AMAZING** result!!!
 
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/Shanghai.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Shanghai%2C%20China_postcard.png)  |
+|:--:|:--:|
+| input image  | output image  |
+
 # Usage
 
 ## Step1: Get Google AI Studio API Key
