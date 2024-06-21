@@ -38,9 +38,21 @@ images = model.generate_images(
 
 images[0].save(location="./gen-img.png", include_generation_parameters=True)
 
-### Display Image
+### Add Text Font onto the Image and Display
 from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
 
 image = Image.open('./gen-img.png')
+image_draw = ImageDraw.Draw(image)
+# text_font = ImageFont.truetype('FreeMono.ttf', 65)
+image_draw.text(
+	xy = (96, 96),
+	text = city_name,
+	align = 'center',
+	# font = ImageFont,
+	fill = (255, 0, 0)
+	)
+
 image.show()
 
