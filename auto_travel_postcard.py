@@ -1,3 +1,9 @@
+### Show a dialog for inputing image
+from tkinter.filedialog import askopenfilename
+
+filename = askopenfilename()
+print("Input image file: ", filename)
+
 ### Sumary of input
 import google.generativeai as genai
 import os
