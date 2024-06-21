@@ -44,6 +44,11 @@ city_color_rgb = city_color_rgb_response.text
 r, g, b = get_rgb_from_hexadecimal(city_color_rgb)
 print(f"City color is: {city_color} {city_color_rgb} ({r},{g},{b})")
 
+poetry_of_the_city_prompt = f"descibe city {city_name} in a short poetry"
+poetry_of_the_city_response = model.generate_content(poetry_of_the_city_prompt)
+poetry_of_the_city = poetry_of_the_city_response.text
+print(f"Poetry of the city {poetry_of_the_city}")
+
 ### Generate image
 from vertexai.preview.vision_models import ImageGenerationModel
 
@@ -65,14 +70,23 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 image = Image.open('./gen-img.png')
+image.resize((1600, 1200))
 image_draw = ImageDraw.Draw(image)
-text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=230)
+title_text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=230)
 image_draw.text(
-	xy = (100, 100),
+	xy = (50, 100),
 	text = city_name,
-	align = 'center',
-	font = text_font,
+	align = 'left',
+	font = title_text_font,
 	fill = (r, g, b)
 	)
-
+desciption_text_font = ImageFont.truetype(font='./Roboto-Regular.ttf', size=32)
+image_draw.text(
+	xy = (100, 300),
+	text = poetry_of_the_city,
+	align = 'left',
+	font = desciption_text_font,
+	fill = (255, 255, 255)
+	)
+image.save(input_image_path)
 image.show()
