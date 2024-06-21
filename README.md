@@ -3,19 +3,19 @@ Given an image, this python tool will use Gemini to get the city of this place a
 
 Let us look at its **AMAZING** result!!!
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/Shanghai.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Shanghai%2C%20China_postcard.png)  |
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/Shanghai.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/shanghai_postcard.png)  |
 |:--:|:--:|
 | input image  | output image  |
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/San_Francisco.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/San%20Francisco_postcard.png)  |
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/San_Francisco.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/san_francisco_postcard.png)  |
 |:--:|:--:|
 | input image  | output image  |
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/mexico%20city.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Mexico_City_postcard.png)  |
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/mexico%20city.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/mexico_city_postcard.png)  |
 |:--:|:--:|
 | input image  | output image  |
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/paris.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Paris_postcard.png)  |
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/paris.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/paris_postcard.png)  |
 |:--:|:--:|
 | input image  | output image  |
 
