@@ -70,7 +70,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 image = Image.open('./gen-img.png')
-image = image.resize((1200, 900), Image.NEAREST)
+image = image.resize((1200, 900), Image.BICUBIC)
 image_draw = ImageDraw.Draw(image)
 title_text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=130)
 image_draw.text(
