@@ -22,13 +22,21 @@ city_name_response = model.generate_content([image_to_text_prompt, image1])
 city_name = city_name_response.text
 print("City name is: ", city_name)
 
-city_color_prompt = f"What is the major color of the city {city_name} in one word"
+city_color_prompt = f"What is the triditional color of country of the city {city_name} in one word"
 city_color_response = model.generate_content(city_color_prompt)
 city_color = city_color_response.text
 city_color_rgb_prompt = f"What is the rgb of color {city_color} into hexadecimal format, pick any one and return just one result"
 city_color_rgb_response = model.generate_content(city_color_rgb_prompt)
 city_color_rgb = city_color_rgb_response.text
-print(f"City color is: {city_color} {city_color_rgb}")
+if city_color_rgb[0] == '#':
+	r = int(city_color_rgb[1:3], 16)
+	g = int(city_color_rgb[3:5], 16)
+	b = int(city_color_rgb[5:7], 16)
+else:
+	r = int(city_color_rgb[0:2], 16)
+	g = int(city_color_rgb[2:4], 16)
+	b = int(city_color_rgb[4:6], 16)
+print(f"City color is: {city_color} {city_color_rgb} ({r},{g},{b})")
 
 ### Generate image
 from vertexai.preview.vision_models import ImageGenerationModel
@@ -52,13 +60,13 @@ from PIL import ImageFont
 
 image = Image.open('./gen-img.png')
 image_draw = ImageDraw.Draw(image)
-text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=270)
+text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=230)
 image_draw.text(
 	xy = (100, 100),
 	text = city_name,
 	align = 'center',
 	font = text_font,
-	fill = (255, 0, 0)
+	fill = (r, g, b)
 	)
 
 image.show()
