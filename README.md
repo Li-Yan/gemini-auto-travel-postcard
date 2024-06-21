@@ -7,7 +7,15 @@ Let us look at its **AMAZING** result!!!
 |:--:|:--:|
 | input image  | output image  |
 
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/San_Francisco.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/San%20Francisco_postcard.png)  |
+|:--:|:--:|
+| input image  | output image  |
+
 | ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/mexico%20city.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Mexico_City_postcard.png)  |
+|:--:|:--:|
+| input image  | output image  |
+
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/paris.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Paris_postcard.png)  |
 |:--:|:--:|
 | input image  | output image  |
 
