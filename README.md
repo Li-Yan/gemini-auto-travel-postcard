@@ -7,6 +7,10 @@ Let us look at its **AMAZING** result!!!
 |:--:|:--:|
 | input image  | output image  |
 
+| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/mexico%20city.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/Mexico_City_postcard.png)  |
+|:--:|:--:|
+| input image  | output image  |
+
 # Usage
 
 ## Step1: Get Google AI Studio API Key
