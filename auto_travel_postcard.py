@@ -72,7 +72,7 @@ from PIL import ImageFont
 image = Image.open('./gen-img.png')
 image = image.resize((1200, 900), Image.BICUBIC)
 image_draw = ImageDraw.Draw(image)
-title_text_font = ImageFont.truetype(font='./RousseauDeco.ttf', size=130)
+title_text_font = ImageFont.truetype(font='./font/RousseauDeco.ttf', size=130)
 image_draw.text(
 	xy = (50, 100),
 	text = city_name,
@@ -80,16 +80,16 @@ image_draw.text(
 	font = title_text_font,
 	fill = (r, g, b)
 	)
-desciption_text_font = ImageFont.truetype(font='./Roboto-Regular.ttf', size=22)
+desciption_text_font = ImageFont.truetype(font='./font/Roboto-Regular.ttf', size=22)
 image_draw.text(
-	xy = (55, 220),
+	xy = (57, 220),
 	text = poetry_of_the_city,
 	align = 'left',
 	font = desciption_text_font,
 	fill = (255, 255, 255)
 	)
 
-watermark_text_font_1 = ImageFont.truetype(font='./Roboto-Regular.ttf', size=20)
+watermark_text_font_1 = ImageFont.truetype(font='./font/Roboto-Regular.ttf', size=20)
 image_draw.text(
 	xy = (1000, 850),
 	text = "made by ",
@@ -97,13 +97,13 @@ image_draw.text(
 	font = watermark_text_font_1,
 	fill = (200, 200, 200)
 	)
-watermark_text_font_2 = ImageFont.truetype(font='./Roboto-Regular.ttf', size=32)
+watermark_text_font_2 = ImageFont.truetype(font='./font/FrederickatheGreat-Regular.ttf', size=32)
 image_draw.text(
-	xy = (1085, 839),
+	xy = (1085, 837),
 	text = "Li Yan",
 	align = 'left',
 	font = watermark_text_font_2,
 	fill = (200, 200, 200)
 	)
-image.save(input_image_path)
+image.save(f"{city_name}_postcard.png")
 image.show()
