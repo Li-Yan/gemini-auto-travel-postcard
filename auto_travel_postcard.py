@@ -105,5 +105,5 @@ image_draw.text(
 	font = watermark_text_font_2,
 	fill = (200, 200, 200)
 	)
-image.save(f"{city_name}_postcard.png")
+image.save(f"postcard.png")
 image.show()
