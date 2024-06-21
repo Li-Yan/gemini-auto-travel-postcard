@@ -21,7 +21,7 @@ Let us look at its **AMAZING** result!!!
 
 # Details
 
-The app does the folling:
+The app does the following:
  1. Use Gemini API to identify the city where the image is taken.
  2. Use Gemini API to identify the country color of the country the city belongs to.
  3. Use Gemini API to generate a poetry of the city.
