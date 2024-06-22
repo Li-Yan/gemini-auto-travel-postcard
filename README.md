@@ -5,21 +5,11 @@ Let us look at its **AMAZING** result!!!
 
 Check this video for the demo: https://youtu.be/oX28FZ90fZI?si=CfkfIZjfwoddfW-F
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/Shanghai.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/shanghai_postcard.png)  |
-|:--:|:--:|
-| input image  | output image  |
+Here are the beautiful postcards this tool generates:
 
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/San_Francisco.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/san_francisco_postcard.png)  |
+| ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/san_francisco_postcard.png) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/shanghai_postcard.png)  |
 |:--:|:--:|
-| input image  | output image  |
-
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/mexico%20city.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/mexico_city_postcard.png)  |
-|:--:|:--:|
-| input image  | output image  |
-
-| ![sample1](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/input_examples/paris.jpg) | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/paris_postcard.png)  |
-|:--:|:--:|
-| input image  | output image  |
+| ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/mexico_city_postcard.png)  | ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/output_example/paris_postcard.png)  |
 
 # Details
 
