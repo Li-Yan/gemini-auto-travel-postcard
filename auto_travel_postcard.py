@@ -42,12 +42,12 @@ city_color_rgb_prompt = f"What is the rgb of color {city_color} into hexadecimal
 city_color_rgb_response = model.generate_content(city_color_rgb_prompt)
 city_color_rgb = city_color_rgb_response.text
 r, g, b = get_rgb_from_hexadecimal(city_color_rgb)
-print(f"City color is: {city_color} {city_color_rgb} ({r},{g},{b})")
+print(f"Color of the country is: {city_color} {city_color_rgb} ({r},{g},{b})\n")
 
 poetry_of_the_city_prompt = f"descibe city {city_name} in a short poetry"
 poetry_of_the_city_response = model.generate_content(poetry_of_the_city_prompt)
 poetry_of_the_city = poetry_of_the_city_response.text
-print(f"Poetry of the city:\n {poetry_of_the_city}")
+print(f"Poetry of the city: \n{poetry_of_the_city}\n")
 
 ### Generate image
 from vertexai.preview.vision_models import ImageGenerationModel
