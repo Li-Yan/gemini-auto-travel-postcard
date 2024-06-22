@@ -1,5 +1,5 @@
 
-![demo](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/demo/demo.gif) 
+<img src="https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/demo/demo.gif" alt="drawing" style="width:800px;"/>
 
 # Desctiption
 Given an image, this python tool will use Gemini to get the city of this place and generate a postcard with a watercolor painting of the city.
