@@ -1,5 +1,7 @@
 <center>
+ 
  ![output](https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/demo/title.gif)
+
 </center>
 
 <img src="https://raw.githubusercontent.com/Li-Yan/gemini-auto-travel-postcard/main/demo/demo.gif" alt="drawing" style="width:800px;"/>
