@@ -1,5 +1,5 @@
 # Desctiption
-Given an image, this python tool will use Gemini to get the city of this place and generate a postcard of the city.
+Given an image, this python tool will use Gemini to get the city of this place and generate a postcard with a watercolor painting of the city.
 
 Let us look at its **AMAZING** result!!!
 
