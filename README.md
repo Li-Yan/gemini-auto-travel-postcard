@@ -25,9 +25,10 @@ The app does the following:
  1. Use Gemini API to identify the city where the image is taken.
  2. Use Gemini API to identify the country color of the country the city belongs to.
  3. Use Gemini API to generate a poetry of the city.
- 4. Add postcard title with the country color fetched in step #2.
- 5. Add text to the postcard with the poetry of the city.
- 6. Export the postcard to an image.
+ 4. Uer vertexai to generate a watercolor painting of the city.
+ 5. Add postcard title with the country color fetched in step #2.
+ 6. Add text to the postcard with the poetry of the city.
+ 7. Export the postcard to an image.
 
 # Usage
 
